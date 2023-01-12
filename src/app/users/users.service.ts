@@ -2,13 +2,14 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { CookieService } from "ngx-cookie-service";
+import { Router } from "@angular/router";
 
 
 @Injectable({
     providedIn: "root"
 })
 export class UserService {
-    constructor(private http: HttpClient, private cookies: CookieService) {}
+    constructor(private http: HttpClient, private cookies: CookieService, private router: Router) {}
 
     // Creamos los servicios para consumir la API 
 
@@ -38,10 +39,12 @@ export class UserService {
 
     getUserLogged() {
         const token = this.getToken();
+        return token;
     }
 
     logout() {
         console.log("Cerrando sesion");
         this.cookies.delete("token");
+        this.router.navigate(['/homepage']);
     }
 }
