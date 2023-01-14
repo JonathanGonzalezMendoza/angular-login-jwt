@@ -24,7 +24,7 @@ export class LoginComponent {
     this.userService.login(user).subscribe(data => {
       console.log(data); // Imprime el Token devuelto
       this.userService.setToken(data.token); // Almacena el token que llega desde la API
-      this.router.navigateByUrl('home'); // Si el logueo es correcto, redirecciona a la pagina principal
+      this.router.navigateByUrl('/home'); // Si el logueo es correcto, redirecciona a la pagina principal
     }, (err: HttpErrorResponse) => {
       if(err.error instanceof Error) {
         console.log("Client-side error");
