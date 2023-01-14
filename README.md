@@ -37,7 +37,7 @@ En resumen, se genera un token en servidor, la pagina lo guarda en las cookies y
 
 ## Resources
 
-Esta ejemplo utiliza una API de prueba para realizar el login y el registro del usuario: 
+Este ejemplo utiliza una API de prueba para realizar el login y el registro del usuario: 
     - Login: https://reqres.in/api/login
     - Register: https://reqres.in/api/register
 
