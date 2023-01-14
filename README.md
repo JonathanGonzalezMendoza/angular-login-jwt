@@ -41,11 +41,12 @@ Esta ejemplo utiliza una API de prueba para realizar el login y el registro del 
     - Login: https://reqres.in/api/login
     - Register: https://reqres.in/api/register
 
-image.png
+![image](https://user-images.githubusercontent.com/25914247/212484896-d12f5845-45dc-4365-a974-398c6044aea5.png)
+
 
 Se utilizan guardianes para proteger las rutas, por ejemplo, si tratas de acceder a las ruta "http://localhost:4200/home" sin haber iniciado sesion te redirigira a la url "http://localhost:4200/not-found" ya que el usuario no se ha autenticado.
 
-image.png
+![image](https://user-images.githubusercontent.com/25914247/212485104-b51dc916-3542-49c5-8397-27767a7e1ecc.png)
 
 ## Additional
 
